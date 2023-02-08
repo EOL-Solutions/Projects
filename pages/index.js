@@ -6,8 +6,6 @@ import { useLoading } from '../components/hooks/useLoading';
 
 import styles from '../styles/Home.module.scss';
 
-
-
 export default function Home() {
   const {setLoading} = useLoading()
   const [products, setProducts] = useState([]);
