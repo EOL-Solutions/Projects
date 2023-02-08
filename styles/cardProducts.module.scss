@@ -1,0 +1,100 @@
+@import './colors.scss';
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    .card{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        width: 60%;
+        height: 70%;
+        padding: 20px 40px;
+        box-sizing: border-box;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+        border: 10px solid $navybabyBlue;
+        img{
+            width: 250px;
+        }
+        .cardInfo{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-around;
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            .containerRate{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                .stars{
+                    display: flex;
+                    gap: 5px;
+                    svg{
+                        cursor: pointer;
+                        color: lightgray;
+                        font-size: 1.5em;
+                        &#active{
+                            color: gold;
+                        }
+                    }
+                }
+                .rateInfo{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    p:nth-child(1){
+                        font-size: 1.2em;
+                        color: $blueGrotto;
+                        font-weight: bold;
+                    }
+                    p:nth-child(2){
+                        color: gray;
+                    }
+                }
+            }
+        }
+        .addCart{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+            padding: 10px;
+            a{
+                width: 100%;
+                button{
+                    width: 100%;
+                    height: 100%;
+                    padding: 10px;
+                    border-radius: 20px;
+                    outline: none;
+                    border: none;
+                    background-color: $blueGrotto;
+                    color: #B6EADA;
+                    cursor: pointer;
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    transition: all .2s ease-in-out;
+                    &:hover{
+                        background-color: $navybabyBlue;
+                        transition: all .2s ease-in-out;
+                    }
+                }
+            }
+            h3{
+                font-size: 1.5em;
+                color: $blueGrotto;
+                font-weight: bold;
+            }
+        }
+    }
+}

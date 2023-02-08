@@ -1,0 +1,215 @@
+@import '../styles/colors.scss';
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  h1{
+    width: 100%;
+    padding: 0 40px 20px 40px;
+    color: #B6EADA;
+    text-align: start;
+    text-transform: capitalize;
+  }
+  .containerCarousel{
+    display: flex;
+    padding: 0 0 20px 0;
+    width: 300%;
+    height: 80vh;
+    .carousel{
+      display: flex;
+      width:100%;
+      img{
+        object-fit: cover;
+        width: 100%;
+      }
+      &#image1{
+        transform: translateX(0);
+        transition: all .8s ease-in-out;
+      }
+      &#image2{
+        transform: translateX(-100%);
+        transition: all .8s ease-in-out;
+      }
+      &#image3{
+        transform: translateX(100%);
+        transition: all .8s ease-in-out;
+      }
+    }
+  }
+  .containerCategories{
+    position: fixed;
+    left: 0;
+    display: flex;
+    width: min-content;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0;
+    top: 20%;
+    z-index: 3;
+    .btnCategories{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 20px;
+      border: none;
+      border-radius: 10px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      background-color: $blueGrotto;
+      color: #B6EADA;
+      font-weight: bold;
+      cursor: pointer;
+      outline: none;
+      width: max-content;
+      height: 100%;
+      transition: all .3s ease-in-out;
+      background: linear-gradient(to left, $navybabyBlue , $blueGrotto );
+      &::after{
+        content: '';
+        display: block;
+        width: 6px;
+        height: 6px;
+        background-color: $navybabyBlue;
+        transition: width .3s;
+        transform: rotate(45deg);
+        border: solid #B6EADA;
+        border-width: 0 3px 3px 0;
+        transition: all .3s ease-in-out;
+      }
+      /* &#active{
+        width: min-content;
+        color: #1554db;
+        &::before{
+          content: '';
+          width: 0;
+          height: 0;
+          border: none;
+          transition: all .3s ease-in-out;
+        }
+        
+      }
+      &:hover{
+        width: min-content;
+        color: #1554db;
+        transition: all .3s ease-in-out;
+      }
+      &:hover::after{
+        content: '';
+        display: block;
+        width: 6px;
+        height: 6px;
+        background-color: $blueGrotto;
+        transition: width .3s;
+        transform: rotate(45deg);
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        transition: all .3s;
+      }
+      &:hover::before{
+        content: '';
+        width: 0;
+        height: 0;
+        border: none;
+        transition: all .3s;
+      }
+      &::before{
+        content: '';
+        display: block;
+        width: 6px;
+        height: 6px;
+        padding: 1px 6px 1px 1px;
+        background-color: $blueGrotto;
+        transition: width .3s;
+        transform: rotate(-45deg);
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        transition: all .3s;
+      } */
+    }
+    .categories{
+      position: absolute;
+      top: 80%;
+      left: 0;
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 20px;
+      background-color: $blueGrotto;
+      border-radius: 10px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      background: linear-gradient(to left, $navybabyBlue , $blueGrotto );
+      button{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 20px;
+        border: none;
+        background-color: transparent;
+        color: #B6EADA;
+        font-weight: bold;
+        cursor: pointer;
+        outline: none;
+        border-bottom: 1px white solid;
+        text-transform: capitalize;
+        &.active{
+          background-color: white;
+          color: $blueGrotto;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+  .products{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 0 20px;
+    .product{
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      border: 4px solid $blueGrotto;
+      background-color: white;
+      justify-content: space-between;
+      border-radius: 20px;
+      padding: 20px;
+      color: $navybabyBlue;
+      cursor: pointer;
+      transition: all .3s ease-in-out;
+      &:hover{
+        box-shadow: 0 0 10px 0 $blueGrotto;
+        transform: scale(1.05);
+        transition: all .3s ease-in-out;
+      }
+      .buttons{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        button{
+          padding: 10px;
+          width: fit-content;
+          height: fit-content;
+          border-radius: 20px;
+          outline: none;
+          border: none;
+          background-color: $blueGrotto;
+          color: #B6EADA;
+          cursor: pointer;
+        }
+      }
+      img{
+        width: 50%;
+      }
+      h4{
+        text-align: center;
+      }
+    }
+  }
+}

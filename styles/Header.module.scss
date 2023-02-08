@@ -1,0 +1,51 @@
+@import "colors.scss";
+
+.container{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    width: 100%;
+    background: linear-gradient(to left, $navybabyBlue, $blueGrotto);
+    color: #B6EADA;
+    z-index: 100;
+    .left, .right{
+        display: flex;
+        gap: 50px;
+        cursor: pointer;
+        .search{
+            display: flex;
+            align-items: center;
+            width: max-content;
+            position: relative;
+            input{
+                position: sticky;
+                padding: 10px 90px 10px 10px ;
+                border: none;
+                border-radius: 10px;
+                outline: none;
+            }
+            button{
+                position: absolute;
+                right: 0;
+                color: #B6EADA;
+                font-weight: bold;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 10px 0 0 10px;
+                background-color: $blueGrotto;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+        .signIn, .cart{
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            font-size: 1.2rem;
+        }
+    }
+
+}
