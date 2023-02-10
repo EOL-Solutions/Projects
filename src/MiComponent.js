@@ -1,13 +1,14 @@
 //Crear un componente 
 //Primero se importan los modulos de react /dependencias
-import React, {Fragment} from "react";
+import React  from "react";
 //funcion del component
 
 const MiComponent = () =>{
 
-    let nombre = "alex";
+   /* let nombre = "alex";
     let ciudad = "Popayan" 
-    let usuario ={
+    */
+   let usuario ={
         nombre: "alex",
         apellidos: "carvajal",
         ciudad: "popayan"
