@@ -15,7 +15,7 @@ const people = [
       name: 'john doe',
       title: 'regular guy',
       quote:
-        'Gastropub sustainable tousled prism occupy. Viral XOXO roof party brunch actually, chambray listicle microdosing put a bird on it paleo subway tile squid umami.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non ultrices purus. Mauris vel nisi non arcu gravida pretium. Duis lacinia mi luctus, dictum ligula sed, rhoncus ipsum. Cras pulvinar aliquam dolor, a molestie nunc accumsan at. Proin ut eros nisl. Curabitur sagittis, nunc a aliquet interdum, sapien felis varius augue, mollis tempor quam mauris vel metus.',
     },
     {
       id: 3,

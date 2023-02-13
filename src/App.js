@@ -1,35 +1,35 @@
-import logo from './Logo.png';
-import './App.css';
-import MiComponent from './MiComponent';
-import Navbar from './Navbar';
+import React, { useState } from "react";
 
-function App() {
+// Components import
+import Navbar from "./components/Navbar/Navbar";
+import NavbarResponsive from "./components/NavbarResponsive/NavbarResponsive";
+import Hero from "./components/Hero/Hero";
+import Features from "./components/Features/Features";
+import Growth from "./components/Growth/Growth";
+import Questions from "./components/Questions/Questions";
+import Programs from "./components/Programs/Programs";
+import Footer from "./components/Footer/Footer";
+// Import data
+import { programs_user } from "./constants/programs_user";
+import { programs_shopper } from "./constants/programs_shopper";
+import Slider from "./components/Slider/Slider";
 
+const App = () => {
+  const [hamActive, setHamActive] = useState(false);
   return (
     <div className="App">
-      <Navbar></Navbar>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-       <h1><p>
-          Eol Solutions
-        </p></h1> 
-       {/*Cargar component*/}
-      <div className='Componentes'>
-      {/*<EventosComponente />*/}
-       <MiComponent/>
-       {/*<MiComponent2/>+}
-      
-      {/**<MiComponent3 nombre="alex" apellidos="Carvajal" ficha= {ficha_m} /> */} 
-      </div>
-       {
-       /*<MiComponent/>
-       <MiComponent/>
-       <MiComponent/>
-       */}
-      </header>
-     
+      <Navbar hamActive={hamActive} setHamActive={setHamActive} />
+      <NavbarResponsive hamActive={hamActive} />
+      <Hero />
+      <Features />
+      <Slider />
+      <Growth />
+      <Questions />
+      <Programs programs={programs_user} />
+      <Programs programs={programs_shopper} />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
