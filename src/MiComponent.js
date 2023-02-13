@@ -8,7 +8,7 @@ import data from './slider/data';
 import './slider/slider.css'
 
 function MiComponent(){
-    const [people, setPeople] = useState(data);
+    const [people] = useState(data);
     const [index, setIndex] = React.useState(0);
 
     useEffect(() => {
