@@ -8,18 +8,6 @@ export const MiComponent2 = () =>{
     return(
     <div className="SegundoComponente">
        <h1>Listado de libros</h1>
-         {/* <ul>
-        
-             <li>
-             {libros[0]}
-         </li>
-         <li>
-             {libros[1]}
-         </li>
-         <li>
-             {libros[2]}
-         </li>
-    */} 
         {libros.length >= 1 ? (
             <ul>
             {

@@ -30,18 +30,7 @@ const MiComponent = () =>{
             Ciudad: <strong>{usuario.ciudad}</strong>
         </li>
     </ul>
-    <p>Primer component</p>
-    <ul>
-        <li>
-            React
-        </li>
-        <li>
-            Angular
-        </li>
-        <li>
-            Vue
-        </li>
-    </ul>
+
         </div>
     );
 }

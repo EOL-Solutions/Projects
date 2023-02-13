@@ -4,9 +4,9 @@ import MiComponent from './MiComponent';
 import { MiComponent2 } from './MiComponent2';
 import {MiComponent3} from './MiComponent3';
 import { EventosComponente } from './EventosComponente';
+import Navbar from './Navbar';
 
 function App() {
-
     const ficha_m={
       altura: "187cm",
       grupo: "H+",
@@ -15,7 +15,9 @@ function App() {
     }
 
   return (
+
     <div className="App">
+      <Navbar></Navbar>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
        <h1><p>
