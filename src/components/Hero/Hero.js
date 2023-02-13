@@ -4,10 +4,7 @@ import Fruta from "./fruta.png";
 const Hero = () => {
   return (
     <div className={`${styles.heroWrapper} center`}>
-      <select className={styles.dropDown}>
-        <option value="US">US</option>
-        <option value="IN">IN</option>
-      </select>
+
       <div className={`${styles.heroInner}`}>
         <h2 className={styles.headerText}>
           Order groceries for delivery or pickup today
