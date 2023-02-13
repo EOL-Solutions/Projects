@@ -3,11 +3,10 @@
 }
 
 body{
-  background: linear-gradient(to right, #1916ba, #020b3e) ;
+  background: linear-gradient(to right, #4a4a9c, #122698);
   background-size: 200% auto;
   background-position: 100% 0;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -21,8 +20,7 @@ body{
 }
 
 .App-header {
-  background: linear-gradient(to right, #1916ba, #020b3e);
-  margin-top: 40px;
+  background: linear-gradient(to right, #4a4a9c, #122698);
   background-size: 200% auto;
   background-position: 100% 0;
   transition: all .5s ease-in-out;
