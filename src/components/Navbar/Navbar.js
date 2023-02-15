@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "./Navbar.module.css";
-import Foto from "./../Hero/foto.png"
+import Foto from "./../../assets/images/foto.png";
+import { Link } from "react-router-dom";
 
 const Navbar = ({ hamActive, setHamActive }) => {
   const handleClick = () => {
     setHamActive(!hamActive);
   };
-
   return (
     <nav className={`${styles.navbarWrapper} center`}>
       <div className={`${styles.navbarInner} center`}>
@@ -25,15 +25,15 @@ const Navbar = ({ hamActive, setHamActive }) => {
             <a href="/" className={`${styles.nav} center`}>
               Home 
             </a>
-            <a href="/" className={`${styles.nav} center`}>
+            <a href="https://github.com/EOL-Solutions" className={`${styles.nav} center`}>
               Projects
             </a>
             <a href="/" className={`${styles.nav} center`}>
               Help
             </a>
-            <a href="/" className={`${styles.nav} center`}>
+            <Link to="/about" className={`${styles.nav} center`}>
               About
-            </a>
+            </Link>
           </div>
           <div>
             <a href="/" className={styles.login}>

@@ -1,10 +1,9 @@
 import styles from "./Hero.module.css";
-import Fruta from "./fruta.png";
+import Fruta from "./../../assets/images/fruta.png";
 
 const Hero = () => {
   return (
     <div className={`${styles.heroWrapper} center`}>
-
       <div className={`${styles.heroInner}`}>
         <h2 className={styles.headerText}>
           Order groceries for delivery or pickup today
