@@ -28,9 +28,9 @@ const Navbar = ({ hamActive, setHamActive }) => {
             <a href="https://github.com/EOL-Solutions" className={`${styles.nav} center`}>
               Projects
             </a>
-            <a href="/" className={`${styles.nav} center`}>
+            <Link to="/help" className={`${styles.nav} center`}>
               Help
-            </a>
+            </Link>
             <Link to="/about" className={`${styles.nav} center`}>
               About
             </Link>

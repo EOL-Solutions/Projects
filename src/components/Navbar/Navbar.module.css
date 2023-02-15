@@ -28,14 +28,14 @@
 }
 
 .nav {
-  color: rgb(202, 195, 0);
+  color: #001696;
   font-weight: 800;
   margin: 0 40px;
   cursor: pointer;
   justify-content: center;
 }
 .nav:hover {
-  color: #020090;
+  color: #4f9000;
 }rgb(53, 165, 100)
 
 .verticalLine {
