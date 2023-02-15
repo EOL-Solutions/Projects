@@ -7,10 +7,9 @@ import Programs from "../../components/Programs/Programs";
 import Footer from "../../components/Footer/Footer";
 import { programs_user } from "../../constants/programs_user";
 import { programs_shopper } from "../../constants/programs_shopper";
-import Slider from "../../components/Slider/Slider";
+import Slider from "../../components/Slider/Slider"; 
 
 const  Home =() =>{
-    const [hamActive, setHamActive] = useState(false);
   return (
     <div className="App">
       <Hero />
