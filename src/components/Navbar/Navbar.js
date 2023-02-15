@@ -4,7 +4,6 @@ import Foto from "./../../assets/images/foto.png";
 import { Link } from "react-router-dom";
 
 const Navbar = ({ hamActive, setHamActive }) => {
-  const [hamActive, setHamActive] = useState(false);
   const handleClick = () => {
     setHamActive(!hamActive);
   };
