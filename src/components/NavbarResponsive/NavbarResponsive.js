@@ -1,7 +1,6 @@
 import styles from "../Navbar/Navbar.module.css";
 import { Link } from "react-router-dom";
 
-
 const NavbarResponsive = ({ hamActive }) => {
 function handleLinkClick(){
   hamActive(false);

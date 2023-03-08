@@ -17,9 +17,9 @@ const  Home =() =>{
       <Slider />
       <Growth />
       <Questions />
-      <Programs programs={programs_user} />
-      <Programs programs={programs_shopper} />
-      <Footer />
+{/*       <Programs programs={programs_user} />
+ */}      <Programs programs={programs_shopper} />
+     {/*  <Footer /> */}
     </div>
   );
 };

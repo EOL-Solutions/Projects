@@ -10,9 +10,9 @@ const Features = () => {
       </div>
       <div className={`${styles.featuresListWrapper} center`}>
         <div className={`${styles.featuresList} center`}>
-          {features.map(({ feature, description, image }) => {
+          {features.map(({ feature, description, image },index) => {
             return (
-              <div className={`${styles.featureDiv} center`}>
+              <div className={`${styles.featureDiv} center`} key={index}>
                 <Fragment>
                   <div className={styles.feature}>
                     <p>{feature}</p>

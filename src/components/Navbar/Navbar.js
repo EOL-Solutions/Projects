@@ -23,11 +23,11 @@ const Navbar = ({ hamActive, setHamActive }) => {
           <div className={styles.navLinksWrapper}>
             <div className={styles.verticalLine}> </div>
             <a href="/" className={`${styles.nav} center`}>
-              Home 
+              Home
             </a>
-            <a href="https://github.com/EOL-Solutions" className={`${styles.nav} center`}>
-              Projects
-            </a>
+            <Link to="/products" className={`${styles.nav} center`}>
+              Products
+            </Link>
             <Link to="/help" className={`${styles.nav} center`}>
               Help
             </Link>
