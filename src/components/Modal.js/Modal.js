@@ -2,8 +2,8 @@ import React, {useState} from "react";
 import styles from "./Modal.module.css";
 const Modal = ({ estado, cambiarEstado }) => {
 
-  const [email]= useState('');
-  const [pass]= useState('');
+  const [email,setEmail]= useState('');
+  const [pass,setPass]= useState('');
 
   const handleSubmit=(e)=>{
     e.preventDefault();
@@ -16,7 +16,7 @@ const Modal = ({ estado, cambiarEstado }) => {
         <div className={`${styles.PageOverlay} center`}>
           <div className={`${styles.ContenedorModal} center`}>
             <div className={`${styles.Encabezado} center`}>
-              <h3>Sign Up</h3>
+              <h3>Sign UP </h3>
             </div>
             <button className={`${styles.Boton} center`}onClick={() => cambiarEstado(false)} >
               <svg xmlns="http://www.w3.org/2000/svg"

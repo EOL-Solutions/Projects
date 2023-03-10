@@ -43,7 +43,7 @@ const Navbar = ({ hamActive, setHamActive }) => {
               Log in
             </a>
             <button className={styles.signup} onClick={()=>cambiarEstadoModal1(!estadoModal1)}>Sign Up</button>
-            <Modal  estado={estadoModal1} cambiarEstado={cambiarEstadoModal1} />
+            <Modal estado={estadoModal1} cambiarEstado={cambiarEstadoModal1} />
           </div>
         </div>
       </div>
