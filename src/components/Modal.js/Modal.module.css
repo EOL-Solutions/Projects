@@ -1,0 +1,117 @@
+.PageOverlay{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.ContenedorModal{
+    width:400px;
+    min-height:600px;
+    /*background:rgba(255,255,255, 0.9);
+    */
+    background-image:url(https://images.pexels.com/photos/3645504/pexels-photo-3645504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size:auto;
+    position:relative;
+    border-radius:10px ;
+    box-shadow:rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    padding:(20px);
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+.Encabezado{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e8e8e8;
+    
+}
+
+h3 {
+    font-weight: 800;
+    font-size: 20px;
+    color: #ffffff;
+  
+  }
+
+  .Boton{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    border-radius: 5px;
+    color: #1766dc;
+
+  } 
+
+  .Boton:hover {
+    background: #82a7df;
+    border-radius: 50%;
+}
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .FormContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .LoginForm{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  label{
+    font-weight: bolder;
+    text-align: left;
+    padding: 0.25rem 0;
+  }
+
+  input{
+    margin: 0.5rem 0;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+  .BotonForm{
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #3d35ad;
+  padding: 20px;
+  width: 150px;
+  border-radius: 10px;
+  outline-style: none;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+  padding-left: 20px;
+}
+.btnLink{
+ 
+    background: none;
+    font-weight: bold;
+    color:#fefeff;
+    cursor: pointer;
+    text-decoration: underline;
+    border: none;
+}

@@ -1,12 +1,15 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from "./Navbar.module.css";
 import Foto from "./../../assets/images/foto.png";
 import { Link } from "react-router-dom";
+import Modal from "../Modal.js/Modal";
+
 
 const Navbar = ({ hamActive, setHamActive }) => {
   const handleClick = () => {
     setHamActive(!hamActive);
   };
+  const [estadoModal1,cambiarEstadoModal1]=useState(false);
   return (
     <nav className={`${styles.navbarWrapper} center`}>
       <div className={`${styles.navbarInner} center`}>
@@ -39,7 +42,8 @@ const Navbar = ({ hamActive, setHamActive }) => {
             <a href="/" className={styles.login}>
               Log in
             </a>
-            <button className={styles.signup}>Sign Up</button>
+            <button className={styles.signup} onClick={()=>cambiarEstadoModal1(!estadoModal1)}>Sign Up</button>
+            <Modal  estado={estadoModal1} cambiarEstado={cambiarEstadoModal1} />
           </div>
         </div>
       </div>
