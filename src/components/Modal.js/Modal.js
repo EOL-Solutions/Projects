@@ -1,9 +1,10 @@
-import React, {useState} from "react";
+import React from "react";
 import styles from "./Modal.module.css";
 const Modal = ({ estado, cambiarEstado }) => {
 
-  const [email,setEmail]= useState('');
-  const [pass,setPass]= useState('');
+
+  const email='';
+  const pass='';
 
   const handleSubmit=(e)=>{
     e.preventDefault();
@@ -32,10 +33,10 @@ const Modal = ({ estado, cambiarEstado }) => {
             </button>
             <div className={`${styles.FormContainer}`}>
               <form className={`${styles.LoginForm}`} onSubmit={handleSubmit}>
-                <label for="email">email</label>
-                <input value={email} type="email" placeholder="youremail@gmial.com" id="email" name="email"></input>
-                <label for="password">Password</label>
-                <input value={pass} type="password" placeholder="*******" id="password" name="password"></input>
+                <label htmlFor="email">email</label>
+                <input defaultValue={email} type="email" placeholder="youremail@gmial.com" id="email" name="email"></input>
+                <label htmlFor="password">Password</label>
+                <input defaultValue={pass} type="password" placeholder="*******" id="password" name="password"></input>
                 <button className={`${styles.BotonForm}`}type="submit">Log In</button>
               </form>
             <button className={`${styles.btnLink}`} >Register if you don't have an account</button>
