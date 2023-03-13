@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { AiFillHeart } from 'react-icons/ai';
 import { FaShoppingCart } from 'react-icons/fa';
+import Footer from '../components/Footer';
 import { useLoading } from '../components/hooks/useLoading';
 
 import styles from '../styles/Home.module.scss';
@@ -95,6 +96,7 @@ export default function Home() {
             </Link>
           ))}
         </div>
+        <Footer/>
       </div>
   )
 }
