@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import styles from "./ProductsToSale.module.css";
 import { products } from "../../constants/products";
+
 const ProductsToSale = () => {
   return (
     <div className={`${styles.productsWrapper} center`}>

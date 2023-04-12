@@ -52,7 +52,7 @@
 
 .products {
   font-size: 1.5rem;
-  padding: 30px 50px 30px 40px;
+  padding: 30px 50px 0px 40px;
   font-weight: 500;
   color:rgb(231, 215, 186);
 }
@@ -112,3 +112,5 @@
     width: 90%;
   }
 }
+
+

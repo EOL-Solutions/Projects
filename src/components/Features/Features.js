@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import styles from "./Features.module.css";
 import { features } from "../../constants/features";
+import { Link } from "react-router-dom";
 
 const Features = () => {
   return (
@@ -29,7 +30,9 @@ const Features = () => {
           })}
         </div>
       </div>
+      <Link to ="/products">
       <button className={styles.shopBtn}>Start shopping</button>
+      </Link>
     </div>
   );
 };
