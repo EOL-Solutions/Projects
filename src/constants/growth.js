@@ -1,18 +1,15 @@
 export const growth = [
+  
   {
-    field: "500 million products",
-    description: "available to shop across the catalog",
-  },
-  {
-    field: "40,000 stores",
+    field: "Fresh products",
     description: "from local grocers to chain stores",
   },
   {
-    field: "5,500+ cities",
-    description: "served across the U.S. & Canada",
+    field: "A lot of cities",
+    description: "serving in different locations",
   },
   {
-    field: "Millions of orders",
+    field: "Many orders",
     description: "delivered or picked up yearly",
   },
 ];

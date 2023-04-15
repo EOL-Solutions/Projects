@@ -36,7 +36,7 @@
 .productsDiv {
   flex-direction: column;
   justify-content:space-between;
-  background: #1bd20a;
+  background: rgb(27, 210, 10,0.7);
   width: 300px;
   height: 100%;
   border-radius: 0.5rem;
