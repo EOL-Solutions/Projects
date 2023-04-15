@@ -1,5 +1,5 @@
 export const programs_shopper = {
-  logo: "https://d2guulkeunn7d8.cloudfront.net/assets/footer/shopper-footer-v3-7e5a506c6d7f915192f8db4a5aa1b9a035f2612eb609988031e35d1573e66c0e.svg",
+
   slogan: "Become a Shopper",
   arr: [
     {
@@ -11,7 +11,7 @@ export const programs_shopper = {
         "Earnings"
       ],
     },
-    {
+ /*    {
       title: "Top cities",
       body: [
         "Los Angeles",
@@ -30,7 +30,7 @@ export const programs_shopper = {
         "Dallas",
         "View all Job Locations"
       ],
-    },
+    }, */
     {
       title: "Shopper help",
       body: [

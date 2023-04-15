@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "./Modal.module.css";
+import styles from "./ModalRegister.module.css";
 import { Link } from "react-router-dom";
 const Modal = ({ estado, cambiarEstado }) => {
 
-
+  const name = '';
   const email='';
   const pass='';
 
@@ -34,16 +34,19 @@ const Modal = ({ estado, cambiarEstado }) => {
             </button>
             <div className={`${styles.FormContainer}`}>
               <form className={`${styles.LoginForm}`} onSubmit={handleSubmit}>
+                <label htmlFor="name">name</label>
+                <input defaultValue={name} type="name" placeholder="name" id="name" name="name"></input>
                 <label htmlFor="email">email</label>
                 <input defaultValue={email} type="email" placeholder="youremail@gmial.com" id="email" name="email"></input>
                 <label htmlFor="password">Password</label>
                 <input defaultValue={pass} type="password" placeholder="*******" id="password" name="password"></input>
                 <button className={`${styles.BotonForm}`}type="submit">Log In</button>
               </form>
-              <Link to = "/modalRegister">
+              <Link to ="/modal">
             <button className={`${styles.btnLink}`} >Register if you don't have an account</button>
             </Link>
             </div>
+
           </div>
         </div>
       )}

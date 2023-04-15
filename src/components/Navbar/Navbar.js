@@ -3,13 +3,15 @@ import styles from "./Navbar.module.css";
 import Foto from "./../../assets/images/foto.png";
 import { Link } from "react-router-dom";
 import Modal from "../Modal.js/Modal";
-
+import ModalRegister from "../ModalRegister/ModalRegister"
 
 const Navbar = ({ hamActive, setHamActive }) => {
   const handleClick = () => {
     setHamActive(!hamActive);
   };
   const [estadoModal1,cambiarEstadoModal1]=useState(false);
+  const [estadoModal2,cambiarEstadoModal2]=useState(false);
+
   return (
     <nav className={`${styles.navbarWrapper} center`}>
       <div className={`${styles.navbarInner} center`}>
@@ -31,19 +33,19 @@ const Navbar = ({ hamActive, setHamActive }) => {
             <Link to="/products" className={`${styles.nav} center`}>
               Products
             </Link>
+          
             <Link to="/help" className={`${styles.nav} center`}>
-              Help
+              Store
             </Link>
             <Link to="/about" className={`${styles.nav} center`}>
               About
             </Link>
           </div>
           <div>
-            <a href="/" className={styles.login}>
-              Log in
-            </a>
-            <button className={styles.signup} onClick={()=>cambiarEstadoModal1(!estadoModal1)}>Sign Up</button>
+            <button className={styles.login} onClick={()=>cambiarEstadoModal1(!estadoModal1)}>Login</button>
             <Modal estado={estadoModal1} cambiarEstado={cambiarEstadoModal1} />
+            <button className={styles.signup} onClick={()=>cambiarEstadoModal2(!estadoModal2)}>Register</button>
+            <ModalRegister estado={estadoModal2} cambiarEstado={cambiarEstadoModal2} />
           </div>
         </div>
       </div>

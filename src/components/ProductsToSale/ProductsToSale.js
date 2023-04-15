@@ -1,8 +1,14 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import styles from "./ProductsToSale.module.css";
 import { products } from "../../constants/products";
 
 const ProductsToSale = () => {
+
+  const [selectProductIndex,setSelectedProductIndex] = useState(null);
+  const handleProductClick = (index) => {
+    setSelectedProductIndex(index);
+  };
+
   return (
     <div className={`${styles.productsWrapper} center`}>
       <div className={styles.productsHeading}>
@@ -11,8 +17,15 @@ const ProductsToSale = () => {
       <div className={`${styles.productsListWrapper} center`}>
         <div className={`${styles.productsList} center`}>
           {products.map(({ feature, description, image },index) => {
+            const isSelected = selectProductIndex === index;
             return (
-              <div className={`${styles.productsDiv} center`} key={index}>
+              <div 
+              className={`${styles.productsDiv} center${
+                isSelected ? styles.selectedProduct:""
+              }`} 
+              key={index}
+                onClick={()=>handleProductClick}
+              >
                 <Fragment>
                   <div className={styles.products}>
                     <p>{feature}</p>

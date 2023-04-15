@@ -11,13 +11,14 @@ function handleLinkClick(){
         <ul className={`${styles.navResLinks}`}>
           <li>
             <a href="/" className={`${styles.navR} center`}>
-              Departments
+              Home
             </a>
           </li>
           <li>
-            <a href="/" className={`${styles.navR} center`}>
-              More ways to shop
-            </a>
+            <Link to = "/products" onClick={handleLinkClick}  className={`${styles.navR} center`}>
+             Products
+           
+            </Link>
           </li>
           <li>
             <Link to="/help" onClick={handleLinkClick}  className={`${styles.navR} center`}>
@@ -25,7 +26,7 @@ function handleLinkClick(){
             </Link>
           </li>
           <li>
-            <Link to='/' onClick={handleLinkClick} className={`${styles.navR} center`}>
+            <Link to='/about' onClick={handleLinkClick} className={`${styles.navR} center`}>
               Exit
             </Link>
           </li>
