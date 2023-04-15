@@ -34,11 +34,11 @@ const Navbar = ({ hamActive, setHamActive }) => {
               Products
             </Link>
           
-            <Link to="/help" className={`${styles.nav} center`}>
+            <Link to="/about" className={`${styles.nav} center`}>
               Store
             </Link>
-            <Link to="/about" className={`${styles.nav} center`}>
-              About
+            <Link to="/help" className={`${styles.nav} center`}>
+              Help
             </Link>
           </div>
           <div>

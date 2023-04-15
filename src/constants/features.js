@@ -17,6 +17,6 @@ export const features = [
     description:
       "Pick a convenient time for you. Enjoy Instacart’s 100% quality guarantee on every order.",
     image:
-      "https://d2guulkeunn7d8.cloudfront.net/assets/homepage/same_day_delivery-a00a9a59cbdfc41e7449cbdd04c12d27303284bef1a8fe957ec2a0112a70d7e7.jpg",
+      "https://news.yale.edu/sites/default/files/styles/featured_media/public/food-desert_v05.jpg?itok=9b2yV0jx&c=ccbdeba1ef24c33a0cd17175ca324858",
   },
 ];

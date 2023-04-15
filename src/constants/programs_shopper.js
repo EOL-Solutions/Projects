@@ -11,26 +11,6 @@ export const programs_shopper = {
         "Earnings"
       ],
     },
- /*    {
-      title: "Top cities",
-      body: [
-        "Los Angeles",
-        "New York City",
-        "Chicago",
-        "Washington D.C.",
-        "San Francisco"
-      ],
-    },
-    {
-      title: "More cities",
-      body: [
-        "Miami",
-        "Las Vegas",
-        "Atlanta",
-        "Dallas",
-        "View all Job Locations"
-      ],
-    }, */
     {
       title: "Shopper help",
       body: [

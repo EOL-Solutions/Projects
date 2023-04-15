@@ -3,6 +3,7 @@
   height: min(10vh, 100px);
   z-index: 10000;
   position: relative;
+  background-color: hsl(180, 100%, 50%,0.2)
 }
 
 .navbarInner {
@@ -51,12 +52,17 @@
 }
 
 .login {
-  color: #343538;
-  font-size: 18px;
-  font-weight: 600;
-  cursor: pointer;
   padding: 0.7rem 1.1rem;
   border-radius: 50px;
+  background: white;
+  color: #1006a3 ;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 0.2rem;
+  cursor: pointer;
+  outline-style: none;
+  /* border-style: none; */
+  border: 2px solid #1006a3;
 }
 
 .signup {
@@ -69,7 +75,8 @@
   margin-left: 0.2rem;
   cursor: pointer;
   outline-style: none;
-  border-style: none;
+  /* border-style: none; */
+  border: 10px solid white;
 }
 
 /* HAMBURGER */

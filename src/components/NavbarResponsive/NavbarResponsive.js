@@ -31,13 +31,7 @@ function handleLinkClick(){
             </Link>
           </li>
         </ul>
-        
-        <select className={styles.navRdropDown} name="" id="">
-          <span className="flag-icon flag-icon-us"></span>{" "}
-          <option value="US">United States</option>
-          <span className="flag-icon flag-icon-in"></span>{" "}
-          <option value="IN">India </option>
-        </select>
+  
       </div>
     </div>
   );

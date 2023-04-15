@@ -2,37 +2,42 @@ export const questions = [
  
  
   {
-    question: "Will I pay the same price on Instacart as I would in the store?",
+    question: "How can I know if a product is available for purchase online?",
     answer:
-      "Instacart makes it easy to order from your favorite stores. Shop for items from stores near you, with a selection of more than 500 retailers and trusted local grocers across North America. Then, Instacart will connect you with a personal shopper in your area to shop and deliver your order. Contactless delivery is available with our “Leave at my door” option.\n" +
+      "You can check the availability of a product on our online store by searching for the specific product on our website. \n" +
       "\n" +
-      "You can track your order’s progress and communicate with your shopper every step of the way using the Instacart app or website.\n" +
+      "If the product is available, it will be displayed as available for purchase. If it's not available, it will be indicated as sold out or out of stock.\n" +
       "\n" +
-      "Instacart also offers curbside pickup at select retail locations. Simply place your order and choose a pickup time, and a shopper will prepare your order at the store.\n" +
-      "\n" +
-      "When you get to the store, use the Instacart app to notify us. Depending on the store, a shopper or store employee will bring the groceries to your car, or you can pick them up at the designated area.",
-  },
+      "You can also contact us through our customer service to get more information about the product availability.\n" 
+    },
   {
     question:
-      "What happens if something is out of stock and I need to give spesific instructions?",
+      "What are the available payment options and are they secure?",
     answer:
-      "Instacart makes it easy to order from your favorite stores. Shop for items from stores near you, with a selection of more than 500 retailers and trusted local grocers across North America. Then, Instacart will connect you with a personal shopper in your area to shop and deliver your order. Contactless delivery is available with our “Leave at my door” option.\n" +
+      "We offer several secure payment options, such as credit and debit card, bank transfer, and online payment through secure payment gateways \n" +
       "\n" +
-      "You can track your order’s progress and communicate with your shopper every step of the way using the Instacart app or website.\n" +
+      "All our payment options are encrypted and comply with industry security standards to ensure the safety of your personal and financial data\n" +
       "\n" +
-      "Instacart also offers curbside pickup at select retail locations. Simply place your order and choose a pickup time, and a shopper will prepare your order at the store.\n" +
-      "\n" +
-      "When you get to the store, use the Instacart app to notify us. Depending on the store, a shopper or store employee will bring the groceries to your car, or you can pick them up at the designated area.",
-  },
+      "You can select your preferred payment option during the checkout process on our website.\n" 
+    },
   {
-    question: "What happens if there's an issue with my order?",
+    question: "What is the shipping cost and how long will it take for my order to arrive?",
     answer:
-      "Instacart makes it easy to order from your favorite stores. Shop for items from stores near you, with a selection of more than 500 retailers and trusted local grocers across North America. Then, Instacart will connect you with a personal shopper in your area to shop and deliver your order. Contactless delivery is available with our “Leave at my door” option.\n" +
+      "The shipping cost may vary depending on the location and size of the order. You can check the specific shipping information on the checkout page of our website before placing your order.\n" +
       "\n" +
-      "You can track your order’s progress and communicate with your shopper every step of the way using the Instacart app or website.\n" +
+      "There may also be free or discounted shipping options for orders over a certain value. As for the delivery time, it depends on the customer's location and the availability of the product in our warehouse. \n" +
       "\n" +
-      "Instacart also offers curbside pickup at select retail locations. Simply place your order and choose a pickup time, and a shopper will prepare your order at the store.\n" +
-      "\n" +
-      "When you get to the store, use the Instacart app to notify us. Depending on the store, a shopper or store employee will bring the groceries to your car, or you can pick them up at the designated area.",
-  },
-];
+      " However, we usually deliver orders within 1 to 2 business days. If you want more information, feel free to contact our customer service.\n" 
+   },
+   {
+    question: "What happens if I receive a damaged or incorrect product?",
+    answer:
+    "If you receive a damaged or incorrect product, we are very sorry for the inconvenience. Please contact our customer service as soon as possible so we can resolve the issue. \n"+
+    "\n" +
+    "We will ask you to provide us with a detailed description of the problem and, if possible, some photos of the product so we can assess the situation. \n"+
+    "\n" +
+    "Depending on the case, we may offer a refund or a replacement of the damaged or incorrect product. We want to ensure that you are satisfied with your purchase, so we will do everything we can to resolve any issues you may have. \n"
+   }
+   
+
+  ];
