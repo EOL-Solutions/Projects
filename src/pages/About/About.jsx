@@ -1,7 +1,11 @@
 import React from 'react'
+import Card from '../../components/Card/Card'
 
 export const About = () => {
   return (
-    <h1>About us</h1>
+    <>
+    
+    <Card />
+    </>
   )
 }

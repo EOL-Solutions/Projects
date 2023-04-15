@@ -1,6 +1,7 @@
 import { Fragment, useState } from "react";
 import styles from "./ProductsToSale.module.css";
 import { products } from "../../constants/products";
+import { Link } from "react-router-dom";
 
 const ProductsToSale = () => {
 
@@ -42,7 +43,9 @@ const ProductsToSale = () => {
           })}
         </div>
       </div>
+      <Link to="/store">
       <button className={styles.shopBtn}>Add To Cart</button>
+      </Link>
     </div>
   );
 };

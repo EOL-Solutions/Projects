@@ -18,7 +18,7 @@ function App (){
                     <Route index element={<Home/>}/>
                  
                     <Route path='products' element={<Products/>} />
-                    <Route path='about' element ={<About />} />
+                    <Route path='store' element ={<About />} />
                     <Route path='help' element={<Help />}/>
                     <Route path='modalRegister' element={<ModalRegister />}/>
                     <Route path='modal' element={<Modal />}/>
