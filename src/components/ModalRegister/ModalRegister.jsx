@@ -18,7 +18,7 @@ const Modal = ({ estado, cambiarEstado }) => {
         <div className={`${styles.PageOverlay} center`}>
           <div className={`${styles.ContenedorModal} center`}>
             <div className={`${styles.Encabezado} center`}>
-              <h3>Login</h3>
+              <h3>Register</h3>
             </div>
             <button className={`${styles.Boton} center`}onClick={() => cambiarEstado(false)} >
               <svg xmlns="http://www.w3.org/2000/svg"
