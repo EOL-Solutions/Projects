@@ -21,15 +21,16 @@ function handleLinkClick(){
             </Link>
           </li>
           <li>
+             <Link to="/store" onClick={handleLinkClick}  className={`${styles.navR} center`}>
+              Store
+            </Link>
+          </li>
+          <li>
             <Link to="/help" onClick={handleLinkClick}  className={`${styles.navR} center`}>
               Help
             </Link>
           </li>
-          <li>
-            <Link to='/about' onClick={handleLinkClick} className={`${styles.navR} center`}>
-              Exit
-            </Link>
-          </li>
+
         </ul>
   
       </div>
