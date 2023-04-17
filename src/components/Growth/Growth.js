@@ -5,7 +5,7 @@ import GrowthBox from "./GrowthBox";
 const imgURL1 =
   "https://nordicapis.com/wp-content/uploads/8-APIs-to-Help-Build-an-Online-Store.png";
 const imgURL2 =
-  "https://d2guulkeunn7d8.cloudfront.net/assets/homepage/homepage_stats_mobile-24bd627084eed46859cb6cf670de84feb1de9ef24909f36cb85db410e57313e8.jpg";
+  "https://nordicapis.com/wp-content/uploads/8-APIs-to-Help-Build-an-Online-Store.png";
 
 const Growth = () => {
   return (

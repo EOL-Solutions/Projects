@@ -6,10 +6,10 @@ const Hero = () => {
     <div className={`${styles.heroWrapper} center`}>
       <div className={`${styles.heroInner}`}>
         <h2 className={styles.headerText}>
-          Order groceries for delivery or pickup today
+        Place an order for groceries to be delivered or picked up today.
         </h2>
         <div className={styles.slogan}>
-          <p>Whatever you want from local stores, brought right to your door</p>
+          <p>Get anything you need from nearby stores, conveniently delivered to your doorstep.</p>
         </div>
         <div className={styles.inputLocation}>
           <i className="fas fa-map-marker-alt"> </i>

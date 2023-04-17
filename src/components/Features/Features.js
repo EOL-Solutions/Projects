@@ -7,7 +7,7 @@ const Features = () => {
   return (
     <div className={`${styles.featuresWrapper} center`}>
       <div className={styles.featuresHeading}>
-        <p>Grocery delivery you can count on</p>
+        <p>Reliable grocery delivery service you can trust.</p>
       </div>
       <div className={`${styles.featuresListWrapper} center`}>
         <div className={`${styles.featuresList} center`}>

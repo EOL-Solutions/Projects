@@ -2,14 +2,14 @@ export const features = [
   {
     feature: "Choose what you want",
     description:
-      "Select items from your favorite grocery stores at Instacart.com or in the app.",
+      "Select items from your favorite grocery stores in the app.",
     image:
       "https://st3.depositphotos.com/4323461/15156/v/600/depositphotos_151567088-stock-illustration-girl-teenager-online-ordering-the.jpg",
   },
   {
     feature: "See real-time updates",
     description:
-      "Personal shoppers pick items with care. Chat as they shop and manage your order.",
+      "Expert shoppers select, you chat, we deliver.",
     image:
       "https://img.caminofinancial.com/wp-content/uploads/2017/09/05203705/fooddelivery.jpeg"},
   {
